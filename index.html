@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <style>
+        img {
+            height: 100%;
+            width: 100%;
+            max-width: 500px;
+            max-height: 500px;
+        }
+        table,td,th {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <a href='#formatting-tags'>Formatting Tags</a>
+    <a href='#quotation-tags'>Quotation Tags</a>
+    <a href='#link-tags'>Link Tags</a>
+    <a href="#image-tag">Image Tag</a>
+    <a href="#table-tags">Table Tags</a>
+    <a href="#list-tags">List Tags</a>
+    <div title="Formatting Tags in HTML" id='formatting-tags'>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <b>Bold</b>
+        <strong>Strong</strong>
+        <i>Italics</i>
+        <em>Emphasis</em>
+        <mark>Mark</mark>
+        <small>Small</small>
+        <big>Big</big>
+        <del>Del</del>
+        <ins>Ins</ins>
+        <sub>sub</sub>
+        <sup>sup</sup>
+    </div>
+    <hr>
+    <div title='Quotation Tags in HTML' id='quotation-tags'>
+        <blockquote cite='www.google.com'>Some blockquote text here!</blockquote>
+        <q>q tag to insert quotations</q>
+        <abbr title="Binary Search Tree">BST</abbr>
+        <address>Address text here</address>
+        <cite>Citing some work</cite>
+        <bdo dir="rtl">Reversed text</bdo>
+    </div>
+    <hr>
+    <div title="Link tags in HTML" id='link-tags'>
+        <a href="https://www.google.com">google in same page</a><br>
+        <a href="https://www.google.com" target="_blank">google in new tab</a><br>
+        <a href="mailto:yashpatel45273@gmail.com">Mail link</a><br>
+        <iframe src="iframe.html" height='450px' width='450px' style='border: 2px solid blue;'></iframe>
+    </div>
+    <hr>
+    <div id='image-tag'>
+        <figure>
+            <img src="dist/images/Singer-1.jpeg" alt="Singer singing in the concert!">
+            <figcaption>Singer-1</figcaption>
+        </figure>
+        <figure>
+            <picture>
+                <source media="(min-width:1000px)" srcset="dist/images/big.jpeg">
+                <source media="(min-width: 750px)" srcset="dist/images/md.jpeg">
+                <source media="(max-width: 749px)" srcset="dist/images/sm.jpeg">
+                <img src="dist/images/big.jpeg" alt="Some Image">
+            </picture>
+            <figcaption>Some Figure</figcaption>
+        </figure>
+    </div>
+    <hr>
+    <div id="table-tags">
+        <table>
+            <caption>Competitive Coding round 2</caption>
+            <tr>
+                <th>Task</th>
+                <th>Problem</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Queen and her diamonds</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Queen and her spy</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Queen and her trade routes</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Queen and her dynasty</td>
+                <td>400</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div id="list-tags">
+        <ul>
+            <li>
+                Searching Algorithms
+                <ul type='square'>
+                    <li>Linear Search</li>
+                    <li>Binary Search</li>
+                    <li>Jump Search</li>
+                </ul>
+            </li>
+            <li>
+                Sorting Algorithms
+                <ul type='circle'>
+                    <li>Insertion Sort</li>
+                    <li>Merge Sort</li>
+                    <li>Quick Sort</li>
+                </ul>
+            </li>
+            <li>
+                Graph Algorithms
+                <ol>
+                    <li>
+                        Traversal Algorithms
+                        <ol type='I'>
+                            <li>DFS</li>
+                            <li>BFS</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Shortest Paths
+                        <ol type='A' start='26'>
+                            <li>Dijkstra</li>
+                            <li>Bellman-Ford</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Pattern Searching Algroithms
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
